@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import {horseProfile} from "..pages/HorseProfile.jsx";
 
 export default function App() {
   return (
