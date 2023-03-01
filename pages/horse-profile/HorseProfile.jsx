@@ -1,13 +1,13 @@
-import { View } from "react-native";
+import { View, Text } from "react-native";
 
 
 export default function HorseProfile({ horse }) {
     return (
         <View>
-            <Text>{horse.name}</Text>
-            <Text>{horse.temperature}</Text>
-            <Text>{horse.moisture}</Text>
-            <Text>{horse.blanket_type}</Text>
+            <Text>Name: {horse.name}</Text>
+            <Text>Temp: {horse.temperature}</Text>
+            <Text>Moisture: {horse.moisture}</Text>
+            <Text>Blanket: {horse.blanket_type}</Text>
         </View>
     )
 }

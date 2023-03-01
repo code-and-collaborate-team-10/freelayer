@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useState, useEffect } from 'react';
-import { HorseProfile } from './pages/horse-profile/HorseProfile';
+import HorseProfile from './pages/horse-profile/HorseProfile.jsx';
 
 
 export default function App() {
 
-  const [horses, setHorses] = useState([require('./assets/horses.json').horses]);
+  const [horses, setHorses] = useState(require('./assets/horses.json').horses);
 
   useEffect(() => {
     console.log('horses: ', horses);
@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* <HorseProfile horse={horses[1]} /> */}
+      <HorseProfile horse={horses[0]} />
     </View>
 
   );
