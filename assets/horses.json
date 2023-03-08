@@ -1,0 +1,192 @@
+{
+    "horses": [
+      {
+        "id": "h001",
+        "name": "Pippin",
+        "temperature": 38.1,
+        "battery": 95,
+        "moisture": 50,
+        "location": {
+          "latitude": 59.3346,
+          "longitude": 18.0632
+        },
+        "comfortable_temperature": 38.0,
+        "age": 5,
+        "weight": 600,
+        "blanket_type": "wool",
+        "history": [
+          {
+            "timestamp": "2022-02-28T10:00:00Z",
+            "temperature": 38.1,
+            "moisture": 50,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2022-02-28T10:30:00Z",
+            "temperature": 38.2,
+            "moisture": 51,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2022-02-28T11:00:00Z",
+            "temperature": 38.3,
+            "moisture": 52,
+            "blanket_type": "fleece"
+          },
+          {
+            "timestamp": "2022-02-28T11:30:00Z",
+            "temperature": 38.0,
+            "moisture": 48,
+            "blanket_type": "fleece"
+          },
+          {
+            "timestamp": "2022-02-28T12:00:00Z",
+            "temperature": 37.9,
+            "moisture": 47,
+            "blanket_type": "polyester"
+          }
+        ]
+      },
+      {
+        "id": "h002",
+        "name": "Duchess",
+        "temperature": 37.5,
+        "battery": 82,
+        "moisture": 45,
+        "location": {
+          "latitude": 59.3293,
+          "longitude": 18.0686
+        },
+        "comfortable_temperature": 38.0,
+        "age": 7,
+        "weight": 700,
+        "blanket_type": "polyester",
+        "history": [
+          {
+            "timestamp": "2022-02-28T10:00:00Z",
+            "temperature": 37.5,
+            "moisture": 45,
+            "blanket_type": "polyester"
+          },
+          {
+            "timestamp": "2022-02-28T10:30:00Z",
+            "temperature": 37.6,
+            "moisture": 44,
+            "blanket_type": "polyester"
+          },
+          {
+            "timestamp": "2022-02-28T11:00:00Z",
+            "temperature": 37.8,
+            "moisture": 43,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2022-02-28T11:30:00Z",
+            "temperature": 37.9,
+            "moisture": 47,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2022-02-28T12:00:00Z",
+            "temperature": 37.9,
+            "moisture": 49,
+            "blanket_type": "fleece"
+          }
+        ]
+      },
+      {
+        "id": "h003",
+        "name": "Thunder",
+        "temperature": 37.9,
+        "battery": 18,
+        "moisture": 48,
+        "location": {
+          "latitude": 59.3297,
+          "longitude": 18.0684
+        },
+        "comfortable_temperature": 38.0,
+        "age": 6,
+        "weight": 650,
+        "blanket_type": "fleece",
+        "history": [
+          {
+            "timestamp": "2023-02-28T10:00:00Z",
+            "temperature": 37.9,
+            "moisture": 48,
+            "blanket_type": "fleece"
+          },
+          {
+            "timestamp": "2023-02-28T10:30:00Z",
+            "temperature": 38.0,
+            "moisture": 50,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2023-02-28T11:00:00Z",
+            "temperature": 38.2,
+            "moisture": 52,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2023-02-28T11:30:00Z",
+            "temperature": 38.1,
+            "moisture": 51,
+            "blanket_type": "polyester"
+          },
+          {
+            "timestamp": "2023-02-28T12:00:00Z",
+            "temperature": 38.0,
+            "moisture": 50,
+            "blanket_type": "fleece"
+          }
+        ]
+      },
+      {
+        "id": "h004",
+        "name": "Bella",
+        "temperature": 38.2,
+        "battery": 50,
+        "moisture": 51,
+        "location": {
+          "latitude": 59.3344,
+          "longitude": 18.0635
+        },
+        "comfortable_temperature": 37.5,
+        "age": 8,
+        "weight": 700,
+        "blanket_type": "wool",
+        "history": [
+          {
+            "timestamp": "2023-02-28T10:00:00Z",
+            "temperature": 38.2,
+            "moisture": 51,
+            "blanket_type": "wool"
+          },
+          {
+            "timestamp": "2023-02-28T10:30:00Z",
+            "temperature": 38.1,
+            "moisture": 49,
+            "blanket_type": "fleece"
+          },
+          {
+            "timestamp": "2023-02-28T11:00:00Z",
+            "temperature": 38.0,
+            "moisture": 47,
+            "blanket_type": "fleece"
+          },
+          {
+            "timestamp": "2023-02-28T11:30:00Z",
+            "temperature": 37.9,
+            "moisture": 45,
+            "blanket_type": "polyester"
+          },
+          {
+            "timestamp": "2023-02-28T12:00:00Z",
+            "temperature": 38.1,
+            "moisture": 48,
+            "blanket_type": "wool"
+          }
+        ]
+      }
+    ]
+  }
