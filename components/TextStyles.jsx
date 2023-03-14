@@ -2,32 +2,32 @@ import { StyleSheet, Text } from "react-native"
 
 export function Heading1(props) {
 
-    return <Text style={fonts.h1}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.h1, props.style]}>{props.children}</Text>
 
 }
 export function Heading2(props) {
 
-    return <Text style={fonts.h2}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.h2, props.style]}>{props.children}</Text>
 
 }
 export function Heading3(props) {
 
-    return <Text style={fonts.h3}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.h3, props.style]}>{props.children}</Text>
 
 }
 export function Heading4(props) {
 
-    return <Text style={fonts.h4}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.h4, props.style]}>{props.children}</Text>
 
 }
 export function Heading5(props) {
 
-    return <Text style={fonts.h5}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.h5, props.style]}>{props.children}</Text>
 
 }
 export function Paragraph(props) {
 
-    return <Text style={fonts.p}>{props.children}</Text>
+    return <Text  {...props} style={[fonts.p, props.style]}>{props.children}</Text>
 
 }
 

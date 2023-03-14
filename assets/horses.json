@@ -13,37 +13,31 @@
       "comfortable_temperature": 38.0,
       "age": 5,
       "weight": 600,
-      "blanket_type": "wool",
       "history": [
         {
           "timestamp": "2022-02-28T10:00:00Z",
           "temperature": 38.1,
-          "moisture": 50,
-          "blanket_type": "wool"
+          "moisture": 50
         },
         {
           "timestamp": "2022-02-28T10:30:00Z",
           "temperature": 38.2,
-          "moisture": 51,
-          "blanket_type": "wool"
+          "moisture": 51
         },
         {
           "timestamp": "2022-02-28T11:00:00Z",
           "temperature": 38.3,
-          "moisture": 52,
-          "blanket_type": "fleece"
+          "moisture": 52
         },
         {
           "timestamp": "2022-02-28T11:30:00Z",
           "temperature": 38.0,
-          "moisture": 48,
-          "blanket_type": "fleece"
+          "moisture": 48
         },
         {
           "timestamp": "2022-02-28T12:00:00Z",
           "temperature": 37.9,
-          "moisture": 47,
-          "blanket_type": "polyester"
+          "moisture": 47
         }
       ]
     },
@@ -60,37 +54,31 @@
       "comfortable_temperature": 38.0,
       "age": 7,
       "weight": 700,
-      "blanket_type": "polyester",
       "history": [
         {
           "timestamp": "2022-02-28T10:00:00Z",
           "temperature": 37.5,
-          "moisture": 45,
-          "blanket_type": "polyester"
+          "moisture": 45
         },
         {
           "timestamp": "2022-02-28T10:30:00Z",
           "temperature": 37.6,
-          "moisture": 44,
-          "blanket_type": "polyester"
+          "moisture": 44
         },
         {
           "timestamp": "2022-02-28T11:00:00Z",
           "temperature": 37.8,
-          "moisture": 43,
-          "blanket_type": "wool"
+          "moisture": 43
         },
         {
           "timestamp": "2022-02-28T11:30:00Z",
           "temperature": 37.9,
-          "moisture": 47,
-          "blanket_type": "wool"
+          "moisture": 47
         },
         {
           "timestamp": "2022-02-28T12:00:00Z",
           "temperature": 37.9,
-          "moisture": 49,
-          "blanket_type": "fleece"
+          "moisture": 49
         }
       ]
     },
@@ -107,37 +95,31 @@
       "comfortable_temperature": 38.0,
       "age": 6,
       "weight": 650,
-      "blanket_type": "fleece",
       "history": [
         {
           "timestamp": "2023-02-28T10:00:00Z",
           "temperature": 37.9,
-          "moisture": 48,
-          "blanket_type": "fleece"
+          "moisture": 48
         },
         {
           "timestamp": "2023-02-28T10:30:00Z",
           "temperature": 38.0,
-          "moisture": 50,
-          "blanket_type": "wool"
+          "moisture": 50
         },
         {
           "timestamp": "2023-02-28T11:00:00Z",
           "temperature": 38.2,
-          "moisture": 52,
-          "blanket_type": "wool"
+          "moisture": 52
         },
         {
           "timestamp": "2023-02-28T11:30:00Z",
           "temperature": 38.1,
-          "moisture": 51,
-          "blanket_type": "polyester"
+          "moisture": 51
         },
         {
           "timestamp": "2023-02-28T12:00:00Z",
           "temperature": 38.0,
-          "moisture": 50,
-          "blanket_type": "fleece"
+          "moisture": 50
         }
       ]
     },
@@ -154,37 +136,31 @@
       "comfortable_temperature": 37.5,
       "age": 8,
       "weight": 700,
-      "blanket_type": "wool",
       "history": [
         {
           "timestamp": "2023-02-28T10:00:00Z",
           "temperature": 38.2,
-          "moisture": 51,
-          "blanket_type": "wool"
+          "moisture": 51
         },
         {
           "timestamp": "2023-02-28T10:30:00Z",
           "temperature": 38.1,
-          "moisture": 49,
-          "blanket_type": "fleece"
+          "moisture": 49
         },
         {
           "timestamp": "2023-02-28T11:00:00Z",
           "temperature": 38.0,
-          "moisture": 47,
-          "blanket_type": "fleece"
+          "moisture": 47
         },
         {
           "timestamp": "2023-02-28T11:30:00Z",
           "temperature": 37.9,
-          "moisture": 45,
-          "blanket_type": "polyester"
+          "moisture": 45
         },
         {
           "timestamp": "2023-02-28T12:00:00Z",
           "temperature": 38.1,
-          "moisture": 48,
-          "blanket_type": "wool"
+          "moisture": 48
         }
       ]
     }
