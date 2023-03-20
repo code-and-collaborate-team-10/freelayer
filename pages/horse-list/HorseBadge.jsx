@@ -1,9 +1,9 @@
 import { StyleSheet, TouchableOpacity, Image } from "react-native";
-import { Heading4, Heading3 } from "../../components/TextStyles";
+import { Heading4 } from "../../components/TextStyles";
 import { Temperature, Battery, Moisture, } from "../../components/Icons";
 import { FlexRow } from "../../components/Divs";
 
-export default function HorseBadge({ horse }) {
+export default function HorseBadge({ horse, navigation }) {
     return (
         <TouchableOpacity style={layout.container} onPress={(() => navigation.navigate('HorseProfile', { horse }))}>
             <FlexRow style={{ justifyContent: "space-between", paddingRight: 15, marginBottom: 30, width: "100%" }}>

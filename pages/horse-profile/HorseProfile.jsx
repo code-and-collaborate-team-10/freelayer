@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
 import { Heading1, Heading3 } from "../../components/TextStyles";
 import {
   Logo,
@@ -11,11 +11,17 @@ import {
 } from "../../components/Icons";
 import { FlexRow } from "../../components/Divs";
 
-export default function HorseProfile({ horse }) {
+export default function HorseProfile({ route, navigation }) {
+
+  const horse = route.params.horse;
+
   return (
     <View style={layout.layout}>
       <FlexRow style={layout.topBar}>
-        <BackArrow />
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <BackArrow />
+
+        </TouchableOpacity>
         <Logo />
         <Settings />
       </FlexRow>

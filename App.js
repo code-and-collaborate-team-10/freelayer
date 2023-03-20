@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='HorseList'>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='HorseList'>
         <Stack.Screen
           name="HorseList"
           component={HorseList}

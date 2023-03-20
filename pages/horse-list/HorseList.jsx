@@ -4,7 +4,7 @@ import HorseBadge from "./HorseBadge";
 import { useContext } from 'react';
 import { HorsesContext } from '../../HorsesContext.jsx';
 
-export default function HorseList() {
+export default function HorseList({ navigation }) {
 
     const horses = useContext(HorsesContext);
 
@@ -30,7 +30,7 @@ export default function HorseList() {
                 top: 22,
             }} />
 
-            {horses.map((horse) => <HorseBadge horse={horse} key={horse.id} />)}
+            {horses.map((horse) => <HorseBadge horse={horse} navigation={navigation} key={horse.id} />)}
         </View>
     )
 }

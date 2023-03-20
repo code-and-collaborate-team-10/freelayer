@@ -33,7 +33,6 @@ export function Settings({ size = 25, ...props }) {
 
 export function BackArrow({ size = 25, ...props }) {
     return (
-
         <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/back-arrow.svg")} />
     )
 }
