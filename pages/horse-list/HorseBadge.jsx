@@ -1,11 +1,11 @@
-import { StyleSheet, View, Image } from "react-native";
+import { StyleSheet, TouchableOpacity, Image } from "react-native";
 import { Heading4, Heading3 } from "../../components/TextStyles";
 import { Temperature, Battery, Moisture, } from "../../components/Icons";
 import { FlexRow } from "../../components/Divs";
 
 export default function HorseBadge({ horse }) {
     return (
-        <View style={layout.container}>
+        <TouchableOpacity style={layout.container} onPress={(() => navigation.navigate('HorseProfile', { horse }))}>
             <FlexRow style={{ justifyContent: "space-between", paddingRight: 15, marginBottom: 30, width: "100%" }}>
                 <FlexRow style={layout.horseTitle}>
                     <Image
@@ -27,7 +27,7 @@ export default function HorseBadge({ horse }) {
                     <Heading4 style={layout.text}>{horse.moisture}%</Heading4>
                 </FlexRow>
             </FlexRow>
-        </View>
+        </TouchableOpacity>
     )
 }
 

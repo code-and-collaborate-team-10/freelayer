@@ -1,31 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { useState, useEffect } from 'react';
+import { StyleSheet } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
 import HorseList from './pages/horse-list/HorseList.jsx';
+import HorseProfile from './pages/horse-profile/HorseProfile.jsx';
 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-
-  const [horses, setHorses] = useState(require('./assets/horses.json').horses);
-
-  useEffect(() => {
-    console.log('horses: ', horses);
-  }, [horses]);
-
   return (
-    <View style={styles.container}>
-      <HorseList horses={horses} />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='HorseList'>
+        <Stack.Screen
+          name="HorseList"
+          component={HorseList}
+        />
+        <Stack.Screen name="HorseProfile" component={HorseProfile} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0E3331',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: "100%",
-    height: "100%",
-  },
-});

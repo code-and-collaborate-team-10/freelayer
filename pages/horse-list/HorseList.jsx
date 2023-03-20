@@ -1,14 +1,21 @@
 import { View, ScrollView } from "react-native-web";
 import { Logo, Profile } from "../../components/Icons"
 import HorseBadge from "./HorseBadge";
+import { useContext } from 'react';
+import { HorsesContext } from '../../HorsesContext.jsx';
+
+export default function HorseList() {
+
+    const horses = useContext(HorsesContext);
 
 
-export default function HorseList({ horses }) {
     return (
         <View style={{
             width: "100%",
             height: "100%",
-            alignItems: "center"
+            alignItems: "center",
+            backgroundColor: '#0E3331',
+
         }}>
             <Logo style={{
                 borderTopLeftRadius: 20,
@@ -23,9 +30,7 @@ export default function HorseList({ horses }) {
                 top: 22,
             }} />
 
-            {horses.map((horse, index) => <HorseBadge horse={horse} />)}
-
-
+            {horses.map((horse) => <HorseBadge horse={horse} key={horse.id} />)}
         </View>
     )
 }
