@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#5585b5',
         borderRadius: 20,
         padding: 10,
+        textAlign: 'center',
         margin: 10,
+
     },
     logo: {
         width: 66,
@@ -19,7 +21,7 @@ const styles = StyleSheet.create({
     },
 
     largeText: {
-        fontSize: 30,
+        fontSize: 40,
     },
     iconAndTemp: {
         display: 'flex',
@@ -36,7 +38,7 @@ const Visibility = ({ data }) => {
     //console.log(data.visibility);
     return (
         <View style={styles.container}>
-            <Text>
+            <Text style={styles.textItem}>
                 Visibility: {data.visibility}
             </Text>
         </View>

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
 
     largeText: {
-        fontSize: 30,
+        fontSize: 40,
     },
     iconAndTemp: {
         display: 'flex',
@@ -31,13 +31,14 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
     },
     tinyLogo: {
-        width: 30,
-        height: 30,
+        width: 40,
+        height: 40,
         marginRight: 15
     }
 })
 
 const WeatherIcons = ({ data }) => {
+    //get the current time and display it on the app
     let timeString = data.dt_txt.substring(11, 13);
     let hour = Number(timeString);
     let time = (hour > 12) ? hour - 12 + 'PM' : hour + 'AM';
@@ -49,6 +50,7 @@ const WeatherIcons = ({ data }) => {
             </Text>
             <Image
                 style={styles.tinyLogo}
+                //turn icon's data to icon
                 source={{
                     uri: `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`,
                 }} />

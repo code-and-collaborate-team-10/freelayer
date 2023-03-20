@@ -6,6 +6,9 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         padding: 10,
         margin: 10,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-evenly",
     },
     logo: {
         width: 66,

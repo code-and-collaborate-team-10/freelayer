@@ -46,7 +46,7 @@ const Widget = ({ data }) => {
                         uri: `http://openweathermap.org/img/wn/${data.weather.weather[0].icon}@2x.png`,
                     }} />
                 <Text style={styles.largeText}>
-                    {data.weather.main.temp + '℃'}
+                    {parseInt(data.weather.main.temp) + '℃'}
                 </Text>
             </View>
             <Text style={styles.textItem}>

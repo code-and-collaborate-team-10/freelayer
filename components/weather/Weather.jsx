@@ -5,6 +5,7 @@ import WeatherButtom from "./WeatherButtom";
 import WeatherIcons from "./WeatherIcons";
 
 const styles = StyleSheet.create({
+
     container: {
         padding: 20,
         marginRight: 10,
@@ -13,10 +14,8 @@ const styles = StyleSheet.create({
         height: 'auto',
         display: "flex",
         flexDirection: "column",
-        borderColor: 'white',
-        borderStyle: 'solid',
-        borderRadius: 10,
-        borderWidth: 3,
+        border: 0,
+
     },
     item: {
         display: "flex",
@@ -72,14 +71,6 @@ const Weather = ({ lon, lat }) => {
                     }
                     setWidget(weatherWidgetData);
 
-                    //setSunSetSunRise(weatherSSRData);
-                    // let newWeatherData = [];
-                    // json.list.forEach((element,index) => {
-                    //     if (Math.floor(index / 8) * 8 === index){
-                    //         //console.log(index);
-                    //         newWeatherData.push(element);
-                    // }
-                    // });
                     setWeather(json.list.slice(0, 8))
                 })
             .catch(error => console.error(error))
