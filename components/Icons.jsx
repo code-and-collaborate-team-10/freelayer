@@ -2,7 +2,7 @@ import { View, Image } from "react-native"
 
 export function Logo(props) {
     return (
-        <View {...props} style={{
+        <View {...props} style={[{
             backgroundColor: "rgba(217, 217, 217, 0.12)",
             padding: 10,
             paddingTop: 20,
@@ -13,7 +13,7 @@ export function Logo(props) {
             alignItems: "center"
 
 
-        }}>
+        }, props.style]}>
             <Image style={{ width: 50, height: 50 }} source={require("../assets/icons/logo.png")} />
         </View>
     )
@@ -63,5 +63,12 @@ export function Battery({ size = 45, ...props }) {
     return (
 
         <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/battery.svg")} />
+    )
+}
+
+export function Profile({ size = 45, ...props }) {
+    return (
+
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/profile.svg")} />
     )
 }
