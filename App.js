@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useState, useEffect } from 'react';
-import HorseProfile from './pages/horse-profile/HorseProfile.jsx';
+import HorseList from './pages/horse-list/HorseList.jsx';
 
 
 export default function App() {
@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <HorseProfile horse={horses[0]} />
+      <HorseList horses={horses} />
     </View>
   );
 }
@@ -22,8 +22,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#0E3331',
     alignItems: 'center',
     justifyContent: 'center',
+    width: "100%",
+    height: "100%",
   },
 });
