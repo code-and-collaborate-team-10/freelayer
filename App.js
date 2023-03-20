@@ -16,7 +16,6 @@ export default function App() {
     <View style={styles.container}>
       <HorseProfile horse={horses[0]} />
     </View>
-
   );
 }
 

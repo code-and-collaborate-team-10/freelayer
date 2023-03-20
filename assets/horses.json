@@ -3,6 +3,7 @@
     {
       "id": "h001",
       "name": "Pippin",
+      "picture_url": "https://media.gq.com/photos/56e71c0b14cbe0637b261d7f/4:3/w_2260,h_1695,c_limit/horseinsuit2.jpg",
       "temperature": 38.1,
       "battery": 95,
       "moisture": 50,
@@ -44,6 +45,7 @@
     {
       "id": "h002",
       "name": "Duchess",
+      "picture_url": "https://hips.hearstapps.com/countryliving/assets/17/16/1492442048-gettyimages-521282782.jpg",
       "temperature": 37.5,
       "battery": 82,
       "moisture": 45,
@@ -85,6 +87,7 @@
     {
       "id": "h003",
       "name": "Thunder",
+      "picture_url": "https://ichef.bbci.co.uk/news/976/cpsprodpb/B875/production/_102512274_gettyimages-518360318.jpg",
       "temperature": 37.9,
       "battery": 18,
       "moisture": 48,
@@ -126,6 +129,7 @@
     {
       "id": "h004",
       "name": "Bella",
+      "picture_url": "https://static.albertafarmexpress.ca/wp-content/uploads/2021/10/10115319/Dimedrol68GettyImages-468577222.jpeg",
       "temperature": 38.2,
       "battery": 50,
       "moisture": 51,

@@ -24,44 +24,44 @@ export function Logo(props) {
         the ones defined earlier. This is known as the "cascading"nature
         of styles.
 */
-export function Settings(props) {
+export function Settings({ size = 25, ...props }) {
     return (
 
-        <Image style={[{ width: 25, height: 25 }, props.style]} {...props} source={require("../assets/icons/settings.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/settings.svg")} />
     )
 }
 
-export function BackArrow(props) {
+export function BackArrow({ size = 25, ...props }) {
     return (
 
-        <Image {...props} style={[{ width: 25, height: 25 }, props.style]} source={require("../assets/icons/back-arrow.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/back-arrow.svg")} />
     )
 }
 
-export function Temperature(props) {
+export function Temperature({ size = 45, ...props }) {
     return (
 
-        <Image {...props} style={[{ width: 25, height: 25 }, props.style]} source={require("../assets/icons/temperature.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/temperature.svg")} />
     )
 }
 
-export function Weather(props) {
+export function Weather({ size = 45, ...props }) {
     return (
 
-        <Image {...props} style={[{ width: 25, height: 25 }, props.style]} source={require("../assets/icons/weather.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/weather.svg")} />
     )
 }
 
-export function Moisture(props) {
+export function Moisture({ size = 45, ...props }) {
     return (
 
-        <Image {...props} style={[{ width: 25, height: 25 }, props.style]} source={require("../assets/icons/moisture.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/moisture.svg")} />
     )
 }
 
-export function Battery(props) {
+export function Battery({ size = 45, ...props }) {
     return (
 
-        <Image {...props} style={[{ width: 25, height: 25 }, props.style]} source={require("../assets/icons/battery.svg")} />
+        <Image {...props} style={[{ width: size, height: size }, props.style]} source={require("../assets/icons/battery.svg")} />
     )
 }
