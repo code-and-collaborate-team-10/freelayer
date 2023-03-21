@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import HorseList from './pages/horse-list/HorseList.jsx';
 import HorseProfile from './pages/horse-profile/HorseProfile.jsx';
+import Weather from './components/weather/Weather.jsx';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ export default function App() {
           component={HorseList}
         />
         <Stack.Screen name="HorseProfile" component={HorseProfile} />
+        <Stack.Screen name="WeatherPage" component={Weather} />
       </Stack.Navigator>
     </NavigationContainer>
   );
