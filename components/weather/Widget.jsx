@@ -29,6 +29,8 @@ const styles = StyleSheet.create({
     },
     city: {
         alignSelf: 'center',
+
+        fontSize: 32,
     }
 })
 

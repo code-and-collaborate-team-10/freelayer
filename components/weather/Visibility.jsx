@@ -16,8 +16,9 @@ const styles = StyleSheet.create({
     },
 
     textItem: {
-        marginRight: 10,
-        alignSelf: 'center'
+        marginRight: 16,
+        alignSelf: 'center',
+        fontSize: 16,
     },
 
     largeText: {

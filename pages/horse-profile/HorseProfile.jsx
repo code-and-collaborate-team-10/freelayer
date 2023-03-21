@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, TouchableWithoutFeedback } from "react-native";
+import { StyleSheet, View, Image, TouchableWithoutFeedback, Text } from "react-native";
 import { Heading1, Heading3 } from "../../components/TextStyles";
 import {
   Logo,
@@ -11,6 +11,7 @@ import {
 } from "../../components/Icons";
 import { FlexRow } from "../../components/Divs";
 import Menu from "../../components/Menu";
+import { useState, useEffect } from "react";
 
 export default function HorseProfile({ route, navigation }) {
 
@@ -47,8 +48,8 @@ export default function HorseProfile({ route, navigation }) {
 
             <TouchableWithoutFeedback onPress={() => navigation.navigate('WeatherPage', { horse })}>
               <Weather />
-
             </TouchableWithoutFeedback>
+              <Text style={layout.textWithFont}> 6 ℃</Text>
           </FlexRow>
         </View>
       </View>
@@ -90,5 +91,9 @@ const layout = StyleSheet.create({
   statRow: {
     gap: 20
 
+  },
+  textWithFont: {
+    color:'white',
+    fontSize:32,
   }
 });

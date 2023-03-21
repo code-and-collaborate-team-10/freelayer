@@ -21,7 +21,10 @@ const styles = StyleSheet.create({
     },
 
     largeText: {
-        fontSize: 30,
+        fontSize: 16,
+    },
+    xlargeText: {
+        fontSize: 32,
     },
     iconAndTemp: {
         display: 'flex',
@@ -47,12 +50,23 @@ const SunRiseSet = ({ data }) => {
     //console.log(SunSetString);
     return (
         <View style={styles.container}>
-            <Text>
-                Sun rise {SunRiseString}
-            </Text>
-            <Text>
-                Sun set {SunSetString}
-            </Text>
+            <View>
+                <Text style={styles.largeText}>
+                    Sun rise
+                </Text>
+                <Text style={styles.xlargeText}>
+                    {SunRiseString}
+                </Text>
+            </View>
+            <View>
+                <Text style={styles.largeText}>
+                    Sun set
+                </Text>
+
+                <Text style={styles.xlargeText}>
+                    {SunSetString}
+                </Text>
+            </View>
         </View>
     )
 }

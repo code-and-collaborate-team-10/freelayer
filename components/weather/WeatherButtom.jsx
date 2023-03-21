@@ -9,6 +9,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         padding: 10,
         margin: 10,
+        top: -100,
+        //fontSize:100,
     },
     logo: {
         width: 66,
@@ -38,7 +40,9 @@ const WeatherButtom = ({ data }) => {
     //console.log(data.weather.weather[0].icon);
     return (
         <View style={styles.container}>
-            <SunRiseSet data={data} />
+            <SunRiseSet
+                style={styles.largeText}
+                data={data} />
             <Visibility data={data} />
         </View>
     )

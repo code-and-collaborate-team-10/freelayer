@@ -14,13 +14,16 @@ const styles = StyleSheet.create({
     },
     container: {
         padding: 20,
-        marginRight: 10,
-        marginLeft: 10,
-        width: '95%',
-        height: 'auto',
+        //marginRight: 10,
+        //marginLeft: 10,
+        // width: '95%',
+        // height: 'auto',
+        width: "100%",
+        height: "100%",
         display: "flex",
         flexDirection: "column",
         border: 0,
+        backgroundColor: '#0E3331'
 
     },
     item: {
@@ -44,6 +47,7 @@ const styles = StyleSheet.create({
     weatherIcons: {
         display: "flex",
         flexDirection: "row",
+
     }
 });
 
