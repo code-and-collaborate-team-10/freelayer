@@ -10,6 +10,7 @@ import {
   Weather,
 } from "../../components/Icons";
 import { FlexRow } from "../../components/Divs";
+import Menu from "../../components/Menu";
 
 export default function HorseProfile({ route, navigation }) {
 
@@ -17,14 +18,7 @@ export default function HorseProfile({ route, navigation }) {
 
   return (
     <View style={layout.layout}>
-      <FlexRow style={layout.topBar}>
-        <TouchableWithoutFeedback layout={{ backgroundColor: "red" }} onPress={() => navigation.goBack()}>
-          <BackArrow />
-
-        </TouchableWithoutFeedback>
-        <Logo />
-        <Settings />
-      </FlexRow>
+      <Menu navigation={navigation} />
       <View style={layout.horseTitle}>
         <Image
           style={layout.horsePicture}
@@ -49,6 +43,13 @@ export default function HorseProfile({ route, navigation }) {
             <Battery />
             <Heading3 style={layout.text}>{horse.battery} %</Heading3>
           </FlexRow>
+          <FlexRow>
+
+            <TouchableWithoutFeedback onPress={() => navigation.navigate('WeatherPage', { horse })}>
+              <Weather />
+
+            </TouchableWithoutFeedback>
+          </FlexRow>
         </View>
       </View>
     </View>
@@ -61,13 +62,6 @@ const layout = StyleSheet.create({
     width: "100%",
     height: "100%",
     alignItems: "center",
-  },
-  topBar: {
-    justifyContent: "space-between",
-    width: "100%",
-    paddingLeft: 10,
-    paddingRight: 10,
-    marginBottom: 40,
   },
   horseTitle: {
     alignItems: "center",

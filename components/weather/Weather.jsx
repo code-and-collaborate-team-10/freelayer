@@ -3,9 +3,15 @@ import { View, Text, Image, ScrollView, StyleSheet } from "react-native";
 import Widget from "./Widget";
 import WeatherButtom from "./WeatherButtom";
 import WeatherIcons from "./WeatherIcons";
+import Menu from "../Menu";
 
 const styles = StyleSheet.create({
+    pageContainer: {
+        backgroundColor: "#0E3331",
+        width: "100%",
+        height: "100%",
 
+    },
     container: {
         padding: 20,
         marginRight: 10,
@@ -41,14 +47,16 @@ const styles = StyleSheet.create({
     }
 });
 
-const Weather = ({ lon, lat }) => {
+const Weather = ({ navigation, route }) => {
 
     const [weather, setWeather] = useState(null);
     const [city, setCity] = useState(null);
     const [widgetData, setWidget] = useState(null);
     const ApiKey = '69409af0442a070508b731836df5ac8d';
-    // const lon = '18.06';
-    // const lat = '59.33';
+
+    const lon = route.params.horse.location.longitude;
+    const lat = route.params.horse.location.latitude;
+
     const url = `https://api.openweathermap.org/data/2.5/forecast?units=metric&lat=${lat}&lon=${lon}&appid=${ApiKey}`;
     var date = new Date();
 
@@ -78,15 +86,17 @@ const Weather = ({ lon, lat }) => {
 
 
     return (
-        <View style={styles.container}>
-            {widgetData && <Widget data={widgetData} />}
-            <ScrollView style={styles.weatherIcons} horizontal={true} >
-                {weather && weather.map((element, index) =>
-                    <WeatherIcons key={index} data={element} />)}
-            </ScrollView>
-            {widgetData && <WeatherButtom data={widgetData} />}
+        <View layout={styles.pageContainer}>
+            <Menu navigation={navigation} />
+            <View style={styles.container}>
+                {widgetData && <Widget data={widgetData} />}
+                <ScrollView style={styles.weatherIcons} horizontal={true} >
+                    {weather && weather.map((element, index) =>
+                        <WeatherIcons key={index} data={element} />)}
+                </ScrollView>
+                {widgetData && <WeatherButtom data={widgetData} />}
+            </View>
         </View>
-
     )
 }
 export default Weather;
