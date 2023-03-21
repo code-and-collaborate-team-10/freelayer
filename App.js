@@ -1,24 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Weather from './components/weather/Weather';
+import { StyleSheet } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
+import HorseList from './pages/horse-list/HorseList.jsx';
+import HorseProfile from './pages/horse-profile/HorseProfile.jsx';
 
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-
-      <Weather lon='18.06' lat='59.33' />
-
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName='HorseList'>
+        <Stack.Screen
+          name="HorseList"
+          component={HorseList}
+        />
+        <Stack.Screen name="HorseProfile" component={HorseProfile} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#0E3331',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -1,0 +1,172 @@
+{
+  "horses": [
+    {
+      "id": "h001",
+      "name": "Pippin",
+      "picture_url": "https://media.gq.com/photos/56e71c0b14cbe0637b261d7f/4:3/w_2260,h_1695,c_limit/horseinsuit2.jpg",
+      "temperature": 38.1,
+      "battery": 95,
+      "moisture": 50,
+      "location": {
+        "latitude": 59.3346,
+        "longitude": 18.0632
+      },
+      "comfortable_temperature": 38.0,
+      "age": 5,
+      "weight": 600,
+      "history": [
+        {
+          "timestamp": "2022-02-28T10:00:00Z",
+          "temperature": 38.1,
+          "moisture": 50
+        },
+        {
+          "timestamp": "2022-02-28T10:30:00Z",
+          "temperature": 38.2,
+          "moisture": 51
+        },
+        {
+          "timestamp": "2022-02-28T11:00:00Z",
+          "temperature": 38.3,
+          "moisture": 52
+        },
+        {
+          "timestamp": "2022-02-28T11:30:00Z",
+          "temperature": 38.0,
+          "moisture": 48
+        },
+        {
+          "timestamp": "2022-02-28T12:00:00Z",
+          "temperature": 37.9,
+          "moisture": 47
+        }
+      ]
+    },
+    {
+      "id": "h002",
+      "name": "Duchess",
+      "picture_url": "https://hips.hearstapps.com/countryliving/assets/17/16/1492442048-gettyimages-521282782.jpg",
+      "temperature": 37.5,
+      "battery": 82,
+      "moisture": 45,
+      "location": {
+        "latitude": 59.3293,
+        "longitude": 18.0686
+      },
+      "comfortable_temperature": 38.0,
+      "age": 7,
+      "weight": 700,
+      "history": [
+        {
+          "timestamp": "2022-02-28T10:00:00Z",
+          "temperature": 37.5,
+          "moisture": 45
+        },
+        {
+          "timestamp": "2022-02-28T10:30:00Z",
+          "temperature": 37.6,
+          "moisture": 44
+        },
+        {
+          "timestamp": "2022-02-28T11:00:00Z",
+          "temperature": 37.8,
+          "moisture": 43
+        },
+        {
+          "timestamp": "2022-02-28T11:30:00Z",
+          "temperature": 37.9,
+          "moisture": 47
+        },
+        {
+          "timestamp": "2022-02-28T12:00:00Z",
+          "temperature": 37.9,
+          "moisture": 49
+        }
+      ]
+    },
+    {
+      "id": "h003",
+      "name": "Thunder",
+      "picture_url": "https://ichef.bbci.co.uk/news/976/cpsprodpb/B875/production/_102512274_gettyimages-518360318.jpg",
+      "temperature": 37.9,
+      "battery": 18,
+      "moisture": 48,
+      "location": {
+        "latitude": 59.3297,
+        "longitude": 18.0684
+      },
+      "comfortable_temperature": 38.0,
+      "age": 6,
+      "weight": 650,
+      "history": [
+        {
+          "timestamp": "2023-02-28T10:00:00Z",
+          "temperature": 37.9,
+          "moisture": 48
+        },
+        {
+          "timestamp": "2023-02-28T10:30:00Z",
+          "temperature": 38.0,
+          "moisture": 50
+        },
+        {
+          "timestamp": "2023-02-28T11:00:00Z",
+          "temperature": 38.2,
+          "moisture": 52
+        },
+        {
+          "timestamp": "2023-02-28T11:30:00Z",
+          "temperature": 38.1,
+          "moisture": 51
+        },
+        {
+          "timestamp": "2023-02-28T12:00:00Z",
+          "temperature": 38.0,
+          "moisture": 50
+        }
+      ]
+    },
+    {
+      "id": "h004",
+      "name": "Bella",
+      "picture_url": "https://static.albertafarmexpress.ca/wp-content/uploads/2021/10/10115319/Dimedrol68GettyImages-468577222.jpeg",
+      "temperature": 38.2,
+      "battery": 50,
+      "moisture": 51,
+      "location": {
+        "latitude": 59.3344,
+        "longitude": 18.0635
+      },
+      "comfortable_temperature": 37.5,
+      "age": 8,
+      "weight": 700,
+      "history": [
+        {
+          "timestamp": "2023-02-28T10:00:00Z",
+          "temperature": 38.2,
+          "moisture": 51
+        },
+        {
+          "timestamp": "2023-02-28T10:30:00Z",
+          "temperature": 38.1,
+          "moisture": 49
+        },
+        {
+          "timestamp": "2023-02-28T11:00:00Z",
+          "temperature": 38.0,
+          "moisture": 47
+        },
+        {
+          "timestamp": "2023-02-28T11:30:00Z",
+          "temperature": 37.9,
+          "moisture": 45
+        },
+        {
+          "timestamp": "2023-02-28T12:00:00Z",
+          "temperature": 38.1,
+          "moisture": 48
+        }
+      ]
+    }
+  ]
+}
