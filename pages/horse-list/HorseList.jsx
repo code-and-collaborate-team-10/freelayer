@@ -1,4 +1,4 @@
-import { View, ScrollView } from "react-native-web";
+import { View, ScrollView } from "react-native";
 import { Logo, Profile } from "../../components/Icons"
 import HorseBadge from "./HorseBadge";
 import { useContext } from 'react';

@@ -10,7 +10,7 @@ export default function HorseBadge({ horse, navigation }) {
                 <FlexRow style={layout.horseTitle}>
                     <Image
                         style={layout.horsePicture}
-                        source={horse.picture_url}
+                        source={{ uri: horse.picture_url }}
                     />
                     <Heading4 style={layout.text}>{horse.name}</Heading4>
                 </FlexRow>

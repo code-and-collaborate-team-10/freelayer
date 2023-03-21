@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Image, TouchableWithoutFeedback } from "react-native";
 import { Heading1, Heading3 } from "../../components/TextStyles";
 import {
   Logo,
@@ -18,17 +18,17 @@ export default function HorseProfile({ route, navigation }) {
   return (
     <View style={layout.layout}>
       <FlexRow style={layout.topBar}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <TouchableWithoutFeedback layout={{ backgroundColor: "red" }} onPress={() => navigation.goBack()}>
           <BackArrow />
 
-        </TouchableOpacity>
+        </TouchableWithoutFeedback>
         <Logo />
         <Settings />
       </FlexRow>
       <View style={layout.horseTitle}>
         <Image
           style={layout.horsePicture}
-          source={horse.picture_url}
+          source={{ uri: horse.picture_url }}
         />
         <Heading1 style={layout.text}>{horse.name}</Heading1>
       </View>
